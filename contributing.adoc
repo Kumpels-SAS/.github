@@ -1,0 +1,339 @@
+= Contributing
+
+== Making commits
+
+Commit your changes when you are happy with them.
+But remember that a commit should only contain changes relevant to its message.
+
+Summarize changes in around 50 characters or fewer.
+
+More detailed explanatory text, if necessary, will be put on the body.
+Wrap it to about 72 characters or so, max 80.
+
+The first line is treated as the title of the commit and the rest of the text as
+the body.
+
+The blank line separating the summary from the body is critical (unless you omit
+the body entirely); various tools like `log`, `shortlog` and `rebase` can get
+confused if you run the two together.
+
+The commit title must complete the phrase "If applied, this commit will ...",
+like this:
+
+* If applied, this commit will _Refactor subsystem X for readability_
+* If applied, this commit will _Update getting started documentation_
+* If applied, this commit will _Remove deprecated methods_
+* If applied, this commit will _Release version 1.0.0_
+* If applied, this commit will _Merge pull request #123 from user/branch_
+
+Explain the problem that this commit is solving. Focus on why you are making
+this change as opposed to how (the code explains that). Are there side effects
+or other unintuitive consequences of this change? Here's the place to explain
+them.
+
+Paragraphs will come after blank lines.
+
+Bullet points are okay, too. Use an asterisk, preceded by a single space, with
+blank lines in between in case your items exceeds 80 chars.
+
+Put references to the issue tracker at the bottom, like this:
+
+----
+Fix #123
+See also #456, #789
+----
+
+Always follow these rules:
+
+* Use the present tense ("Add feature" not "Added feature")
+
+* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+
+* Limit the first line to 72 characters or fewer
+
+* Reference issues and pull requests liberally after the first line
+
+* Capitalize when possible following grammar rules
+
+* Do not end the title line with a period
+
+* Do not assume everyone understands what the original problem was, ensure you add it
+
+* Do not think your code is self-explanatory
+
+* Start the commit message with the corresponding emoji (gitmoji):
+
+[%header, cols="1,2,5a"]
+|===
+|Emoji
+|Unicode Name
+|Usage
+
+| 🎨
+| `ARTIST PALETTE`
+| Improve structure / format of the code.
+
+| ⚡
+| `HIGH VOLTAGE SIGN`
+| Improve performance.
+
+| 🔥
+| `FIRE`
+| Remove code or files.
+
+| 🐛
+| `BUG`
+| Fix a bug.
+
+| 🚑
+| `AMBULANCE`
+| Critical hotfix.
+
+| ✨
+| `SPARKLES`
+| Introduce new features.
+
+| 📝
+| `MEMO`
+| Add or update documentation.
+
+| 🚀
+| `ROCKET`
+| Deploy stuff.
+
+| 💄
+| `LIPSTICK`
+| Add or update the UI and style files.
+
+| 🎉
+| `PARTY POPPER`
+| Begin a project.
+
+| ✅
+| `WHITE HEAVY CHECK MARK`
+| Add, update or pass tests.
+
+| 🔒
+| `LOCK`
+| Fix security issues.
+
+| 🔐
+| `CLOSED LOCK WITH KEY`
+| Add or update secrets.
+
+| 🔖
+| `BOOKMARK`
+| Release / Version tags.
+
+| 🚨
+| `POLICE CARS REVOLVING LIGHT`
+| Fix compiler / linter warnings.
+
+| 🚧
+| `CONSTRUCTION SIGN`
+| Work in progress.
+
+| 💚
+| `GREEN HEART`
+| Fix CI build.
+
+| ⬇️
+| `DOWNWARDS BLACK ARROW` `VARIATION SELECTOR-16`
+| Downgrade dependencies.
+
+| ⬆️
+| `UPWARDS BLACK ARROW` `VARIATION SELECTOR-16`
+| Upgrade dependencies.
+
+| 📌
+| `PUSHPIN`
+| Pin dependencies to specific versions.
+
+| 👷
+| `CONSTRUCTION WORKER`
+| Add or update CI build system.
+
+| 📈
+| `CHART WITH UPWARDS TREND`
+| Add or update analytics or track code.
+
+| ♻
+| `BLACK UNIVERSAL RECYCLING SYMBOL`
+| Refactor code.
+
+| ➕
+| `HEAVY PLUS SIGN`
+| Add a dependency.
+
+| ➖
+| `HEAVY MINUS SIGN`
+| Remove a dependency.
+
+| 🔧
+| `WRENCH`
+| Add or update configuration files.
+
+| 🔨
+| `HAMMER`
+| Add or update development scripts.
+
+| 🌐
+| `GLOBE WITH MERIDIANS`
+| Internationalization and localization.
+
+| ✏
+| `PENCIL`
+| Fix typos.
+
+| 💩
+| `PILE OF POO`
+| Write bad code that needs to be improved.
+
+| ⏪
+| `BLACK LEFT-POINTING DOUBLE TRIANGLE`
+| Revert changes.
+
+| 🔀
+| `TWISTED RIGHTWARDS ARROWS`
+| Merge branches.
+
+| 📦
+| `PACKAGE`
+| Add or update compiled files or packages.
+
+| 👽
+| `EXTRATERRESTRIAL ALIEN`
+| Update code due to external API changes.
+
+| 🚚
+| `DELIVERY TRUCK`
+| Move or rename resources (e.g.: files, paths, routes).
+
+| 📄
+| `PAGE FACING UP`
+| Add or update license.
+
+| 💥
+| `COLLISION SYMBOL`
+| Introduce breaking changes.
+
+| 🍱
+| `BENTO BOX`
+| Add or update assets.
+
+| ♿
+| `WHEELCHAIR SYMBOL`
+| Improve accessibility.
+
+| 💡
+| `ELECTRIC LIGHT BULB`
+| Add or updates comments in source code.
+
+| 🗃
+| `CARD FILE BOX`
+| Perform database related changes.
+
+| 🔊
+| `SPEAKER WITH THREE SOUND WAVES`
+| Add or update logs.
+
+| 🔇
+| `SPEAKER WITH CANCELLATION STROKE`
+| Remove logs.
+
+| 👥
+| `BUSTS IN SILHOUETTE`
+| Add or update contributors.
+
+| 🚸
+| `CHILDREN CROSSING`
+| Improve user experience / usability.
+
+| 🏗
+| `BUILDING CONSTRUCTION`
+| Make architectural changes.
+
+| 📱
+| `MOBILE PHONE`
+| Work on responsive design.
+
+| 🤡
+| `CLOWN FACE`
+| Mock things.
+
+| 🥚
+| `EGG`
+| Add or update an Easter Egg.
+
+| 🙈
+| `SEE-NO-EVIL MONKEY`
+| Add or update a `.gitignore`
+
+| 📸
+| `CAMERA WITH FLASH`
+| Add or update snapshots.
+
+| ⚗
+| `ALEMBIC`
+| Perform experiments.
+
+| 🔍
+| `LEFT-POINTING MAGNIFYING GLASS`
+| Improve SEO.
+
+| 🏷
+| `LABEL`
+| Add or update types.
+
+| 🌱
+| `SEEDLING`
+| Add or update seed files.
+
+| 🚩
+| `TRIANGULAR FLAG ON POST`
+| Add, update or remove feature flags.
+
+| 🥅
+| `GOAL NET`
+| Catch errors.
+
+| 💫
+| `DIZZY SYMBOL`
+| Add or update animations and transitions.
+
+| 🗑
+| `WASTEBASKET`
+| Deprecate code that needs to be cleaned up.
+
+| 🛂
+| `PASSPORT CONTROL`
+| Work on code related to authorization, roles and permissions.
+
+| 🩹
+| `ADHESIVE BANDAGE`
+| Simple fix for a non-critical issue.
+
+| 🧐
+| `FACE WITH MONOCLE`
+| Data exploration / inspection.
+
+| ⚰
+| `COFFIN`
+| Remove dead code.
+
+| 🧪
+| `TEST TUBE`
+| Add a failing test.
+
+| 👔
+| `NECKTIE`
+| Add or update business logic.
+
+| 🩺
+| `STETHOSCOPE`
+| Add or update health check.
+
+| 🧱
+| `BRICK`
+| Infrastructure related changes.
+|===
